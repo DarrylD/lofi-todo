@@ -1,0 +1,24 @@
+{
+    "expo": {
+        "name": "lofi-todo",
+        "description": "A lofi grid format todo list",
+        "slug": "lofi-todo",
+        "privacy": "public",
+        "sdkVersion": "22.0.0",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "primaryColor": "#cccccc",
+        "icon": "./assets/icon.png",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#fffff"
+        },
+        "packagerOpts": {
+            "assetExts": ["ttf", "mp4"]
+        },
+        "ios": {
+            "supportsTablet": true
+        }
+    }
+}

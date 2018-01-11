@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "es6"
+        ],
+        "plugins": [
+            {
+                "name": "typescript-styled-plugin"
+            }
+        ]
+    }
+}

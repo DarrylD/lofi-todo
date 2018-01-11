@@ -1,0 +1,29 @@
+{
+    "main": "node_modules/expo/AppEntry.js",
+    "private": true,
+    "dependencies": {
+        "expo": "^22.0.0",
+        "lodash": "^4.17.4",
+        "react": "16.0.0-beta.5",
+        "react-native":
+            "https://github.com/expo/react-native/archive/sdk-22.0.2.tar.gz",
+        "react-native-keyboard-aware-scroll-view": "^0.4.1",
+        "react-native-modal": "^4.1.1",
+        "react-native-popup-dialog": "^0.10.45",
+        "react-native-push-notification": "^3.0.1",
+        "react-native-statusbar-alert": "^0.4.0",
+        "styled-components": "^2.2.3"
+    },
+    "name": "lofi-todo",
+    "version": "1.0.0",
+    "description": "A lofi grid format todo list with Expo.io",
+    "author": "Darryl D.",
+    "scripts": {
+        "format": "prettier '**/*.{js,jsx}' --tab-width 4 --write"
+    },
+    "devDependencies": {
+        "babel-preset-flow": "^6.23.0",
+        "flow-bin": "^0.58.0",
+        "typescript-styled-plugin": "^0.3.0"
+    }
+}
