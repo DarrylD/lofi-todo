@@ -164,7 +164,9 @@ export default class TodoCard extends React.Component<
     }
 
     renderModal() {
-        const { showModal } = this.state
+        const { list, showModal } = this.state
+
+        const doneList = list.filter(o => o.done)
 
         return (
             <ModalCard
@@ -178,6 +180,10 @@ export default class TodoCard extends React.Component<
                     }}
                 >
                     {this.renderCard()}
+
+                    <CounterText>
+                        {doneList.length}/{list.length}
+                    </CounterText>
                 </View>
             </ModalCard>
         )
@@ -226,15 +232,6 @@ export default class TodoCard extends React.Component<
                         </ListHeaderText>
                     </TouchableOpacity>
                     {showDelete}
-                    {/* <ListHeaderText
-                        style={{
-                            alignItems: 'flex-end',
-                            height: 30,
-                            alignSelf: 'center',
-                        }}
-                    >
-                        {doneList.length}/{list.length}
-                    </ListHeaderText> */}
                 </CardHead>
 
                 <FlatList
@@ -262,6 +259,14 @@ export const ModalCard = styled(Modal)`
     background-color: white;
     flex: 1;
     max-height: 400px;
+`
+
+export const CounterText = styled.Text`
+    font-size: 30px;
+    font-family: robotoSlabBold;
+    color: ${BRAND_COLOR};
+    opacity: 0.5;
+    align-self: center;
 `
 
 const AddIcon = styled(TouchableOpacity)`
